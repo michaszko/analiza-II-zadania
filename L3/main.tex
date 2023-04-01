@@ -1,0 +1,125 @@
+%! TeX program = lualatex
+%! TEX options = -synctex=1 -interaction=nonstopmode -file-line-error --shell-escape "%DOC%"
+\documentclass[a4paper,11pt]{article}
+\usepackage{polski}
+% \usepackage{libertine}
+\usepackage[top=1.5cm, bottom=1.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\everymath{\displaystyle}
+
+\setlength\parindent{0.5pt} 
+
+\begin{document}
+
+\begin{center}
+  {\large\textbf{Lista 3}}
+\end{center}
+
+\hrulefill
+\begin{center}
+    \textbf{Zadania do deklaracji (poniedziałek)}
+\end{center}
+
+\bigskip
+
+\textbf{Zadanie 1} Znajdź promień zbieżności 
+następujących szeregów potęgowych:
+
+\begin{multicols}{3}
+    \begin{enumerate}
+        \item $\sum_{n=0}^\infty (2+(-1)^n)^n x^n$
+        \item $\sum_{n=1}^\infty \frac{n^{1000}}{\sqrt{n!}}x^n$
+        \item $\sum_{n=1}^\infty \frac{1}{\ln(2+n)}x^n$
+    \end{enumerate}
+\end{multicols}
+
+\bigskip
+
+\textbf{Zadanie 2} Znajdź sumy poniższych szeregów:
+
+\begin{multicols}{3}
+    \begin{enumerate}
+        \item $\sum_{n=0}^\infty n(n+1) x^n$
+        \item $\sum_{n=0}^\infty n^3 x^n$
+        \item $\sum_{n=0}^\infty (-1)^{n} n^2 x^n$
+    \end{enumerate}
+\end{multicols}
+
+\bigskip
+
+\textbf{Zadanie 3} Udowodnij zbieżność jednostajną dla szeregu $\sum_{n=1}^\infty \frac{x^n}{n^2}$ na odcinku $[-1,1]$.
+
+\textit{Wskazówka: przeczytać przykład 7.4 w skrypcie.}
+
+\bigskip
+
+\textbf{Zadanie 4} Znaleźć postać ogólną funkcji $f$ tożsamościowo
+spełniającej równanie
+
+\[
+(1-x^2) f''(x) - 2xf'(x) - \lambda f(x) = 0
+\]
+
+gdzie $\lambda \in \mathbb{R}$ jest pewną liczbą rzeczywistą, zakładając, 
+że $f$ jest sumą pewnego szeregu potęgowego o środku w $x_0 = 0$. \\
+
+\textit{Wskazówka: Rozwiązaniem będą wielomiany Legendre'a 
+(Legendre polynomials), można o nich więcej poczytać w internecie}
+
+\bigskip
+
+\hrulefill
+
+\begin{center}
+    \textbf{Zadania na zajęcia}
+\end{center}
+
+\bigskip
+
+\textbf{Zadanie 5} Znajdź $f^{(n)}(0)$:
+
+    \begin{enumerate}
+        \item $f(x) = \frac{1}{2+3x^2}$, dla $x \in \mathbb{R}, ~n =1001$,
+        \item $f(x) = \arctan x$, dla $x \in \mathbb{R}, ~n =999$,
+        \item $f(x) = \frac{x}{(x-2)(x-3)}$, dla $x \in (-1;1), ~n=100$
+    \end{enumerate}
+
+\bigskip
+
+\textbf{Zadanie 6} Znaleźć postać ogólną funkcji $f$ tożsamościowo
+spełniającej równanie
+
+\[
+f''(x) + \lambda f(x) = 0
+\]
+
+gdzie $\lambda \in \mathbb{R}$ jest pewną liczbą rzeczywistą, zakładając, 
+że $f$ jest sumą pewnego szeregu potęgowego o środku w $x_0 = 0$.
+
+\bigskip
+
+\textbf{Zadanie 7$^\ast$} Niech $A = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$. Oblicz $\exp(iA)$.
+
+\bigskip
+
+\textbf{Zadanie 8} Niech $f(x) = \sum_{n=0}^\infty a_n x^n$ dla $x \in \mathbb{R}$, $F(x) = \frac{f(x)}{1-x}$. Znaleźć $F^{(n)}(0)$.
+
+\newpage
+
+\textbf{Zadanie 9} Zbadać zbieżność punktową, jednostajną i niemal 
+jednostajną ciągów funkcyjnych
+
+\begin{enumerate}
+    \item $f_n (x) = x^n - x^{n+1}$ na $[0,1]$
+    \item $f_n(x) = \sin\left(\frac{x}{n}\right)$ na $\mathbb{R}$
+    \item $f_n(x) = x \arctan(nx)$ na $\mathbb{R}$
+\end{enumerate}
+
+\end{document}
+

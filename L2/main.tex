@@ -1,0 +1,128 @@
+%! TeX program = lualatex
+%! TEX options = -synctex=1 -interaction=nonstopmode -file-line-error --shell-escape "%DOC%"
+\documentclass[a4paper,11pt]{article}
+\usepackage{polski}
+% \usepackage{libertine}
+\usepackage[top=1.5cm, bottom=1.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{enumitem}
+
+\setlength\parindent{0.5pt} 
+
+\begin{document}
+
+\begin{center}
+  {\large\textbf{Lista 2}}
+\end{center}
+
+\bigskip
+
+\hrule
+
+\begin{center}
+    Zadania do deklaracji
+\end{center}
+
+\textbf{Zadanie 1} Korzystając ze wzoru Taylora zbadać zbieżność szeregu
+
+\[
+\sum_{n=1}^\infty \left(e^{1/\sqrt{n}} - 1 - \frac{1}{\sqrt{n}} 
+- \frac{1}{2n}\right)
+\]
+
+\bigskip
+
+\textbf{Zadanie 2} 
+Z powodu swojej masy, przewody trakcyjne mają kształt opiwyswany przez funckję
+${f(x) = a \cosh \frac{x}{a}}$, gdzie 
+$\cosh x := \frac{e^x + e^{-x}}{2}$ 
+to cosinus hiperboliczny (więcej informacji w internecie). Pokaż, że dla małych $x$ kształt jest dobrze przybliżony przez parabole
+\[
+f(x) = a + \frac{x^2}{2a}.
+\]
+Oszacuj bład dla dowolnego $a$ oraz $|x| \leq a$.
+
+\bigskip
+
+\textbf{Zadanie 3} 
+
+a) Zapisać funkcję $f(x) = \frac{x}{1-x^2}$
+jako sumę szeregu potęgowego wokół zera i wyznaczyć
+przedział zbieżności tego szeregu.
+
+b) Wyznaczyć przedział zbieżności szeregu potęgowego 
+$\sum_{n=0}^\infty 2^{-n} x^{n^2}$.
+
+\bigskip
+
+\textbf{Zadanie 4} Znaleźć sumę szeregów
+\begin{enumerate}[label=(\alph*)]
+    \item $\displaystyle \sum \limits_{n=0}^\infty \frac{x^{2n+1}}{2n+1}$,
+    \item $\displaystyle \sum \limits_{n=0}^\infty (-1)^{n} \frac{x^{2n+1}}{2n+1}$,
+    \item $\displaystyle \sum \limits_{n=0}^\infty \frac{x^{2n}}{2n!}$.
+\end{enumerate}
+
+\hrule
+
+\begin{center}
+    Zadanie pozostałe
+\end{center}
+
+\textbf{Zadanie 5} Korzystając ze wzoru Taylora zbadać zbieżność szeregu
+
+\[
+\sum_{n=0}^\infty \left( \ln(1+n) - \ln(n) - \frac{1}{n}\right)
+\]
+
+Wskazówka: nie rozwijać Taylora w zerze tylko w trochę innym punkcie. \\
+Wskazówka 2: zobaczyć co zwraca WolframAlpha na zapytanie $\ln(1+x)$
+
+\bigskip
+
+\textbf{Zadanie 6} Zbadać wypukłość i znaleźć punkty przegięcia funkcji:
+
+\begin{enumerate}[label=(\alph*)]
+    \item $f(x) = x^2\ln x \text{~~dla~~} x > 0$
+    \item $f(x) = x - \sin(x)$
+    \item $f(x) = (1+x^2)e^x$
+\end{enumerate}
+
+\bigskip
+
+\textbf{Zadanie 7} Niech
+
+\[
+f(x) = 
+\begin{cases}
+    \frac{e^x-1}{x} & \text{~gdy~} x\neq0, \\
+    1 & \text{~gdy~} x=0
+\end{cases}
+\]
+Wykazać, że funkcja $f$ jest klasy $C^\infty$
+i znaleźć wartości jej wszystkich pochodnych w zerze.
+
+\bigskip
+
+\textbf{Zadanie 8} 
+\begin{enumerate}[label=(\alph*)]
+    \item Znaleźć promień zbieżności szeregu potęgowego
+    \[
+    \sum_{n=1}^\infty 2^{5^n} x^{a_n},
+    \]
+    gdzie $a_1 = 1$ oraz $a_{n+1} = 5a_n + (-3)^n$ dla $n\geq1$.
+    %
+    \item Rozwinąć w szereg potęgowy wokół punktu $x_0 = 0$ funkcję 
+    $f:\mathbb{R} \setminus \{3/2\} \to \mathbb{R}$
+    \[
+    f(x) = \arctan \left( \frac{3x+8}{4x-6} \right)
+    \]
+    Wyznaczyć przedział zbieżności otrzymanego szeregu. 
+    Znaleźć wartość sumy szeregu dla $x = 7/4$.
+\end{enumerate}
+
+
+\end{document}
+

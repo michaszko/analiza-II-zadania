@@ -1,0 +1,156 @@
+%! TeX program = lualatex
+%! TEX options = -synctex=1 -interaction=nonstopmode -file-line-error --shell-escape "%DOC%"
+\documentclass[a4paper,11pt]{article}
+\usepackage{libertine}
+\usepackage[top=1.5cm, bottom=1.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{polski}
+
+\def\UrlFont{\em}
+\setlength\parindent{0.5pt}
+
+\begin{document}
+
+\begin{center}
+  {\large\textbf{Lista 1}}
+\end{center}
+
+\bigskip
+
+\textbf{Zadanie 0} Napisz $k$-ty wielomain Maclaurina dla $k=3$ dla
+poniższych funkcji:
+
+\bigskip
+
+\begin{minipage}{0.49\textwidth}
+  \begin{itemize}
+    \item $f(x) = \sqrt{1+x} $ ,
+    \item $f(x) = \ln(1+x)$ ,
+    \item $f(x) = \sin(x)$,
+  \end{itemize} 
+\end{minipage}
+%
+\begin{minipage}{0.49\textwidth}
+  \begin{itemize}
+    \item $f(x) = \cos(x)$,
+    \item $f(x) = \arcsin(x)$,
+    \item $f(x) = \frac{1}{1+x}$.
+  \end{itemize}
+\end{minipage}
+
+\bigskip
+
+\textbf{Zadanie 1} Korzystając ze wzoru Taylora z resztą w postaci Peano
+obliczyć granice
+
+\begin{minipage}{0.5\textwidth}
+
+  \[
+    \lim_{x\to 0} \frac{\sin x (1-\cos x)}{x^4}
+  ,\] 
+
+  \[
+    \lim_{x\to 0} \frac{\cos(x^2) - e^{x^4}}{\sin(x^4)}
+  ,\] 
+
+  \[
+    \lim _{x\to 0^+} \frac{\cos(\sqrt{x}) - 1 }{2x}
+  ,\] 
+
+  \[
+    \lim_{x\to 0} \frac{1-\cos(\sin(x))}{x^2}
+  ,\] 
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+
+  \[
+    \lim_{x \to {-\infty}}\left( x+\sqrt{x^2 + 23x}  \right) 
+  ,\] 
+
+  \[
+    \lim_{x \to 0} \left( \frac{1}{\ln(1+x)} - \frac{1}{\tan x} \right) 
+  ,\]
+
+  \[
+    \lim_{x\to 0} \frac{x(\ln(\cos x + x^4
+    \sqrt{1+x^2}))}{\tan(\sin(x)-x)}
+  ,\]
+
+  \[
+    \lim_{x\to 0} \frac{(\arcsin x - \sin x)^{\frac{4}{3}} \ln(\frac{1}{\cos
+    x})}{(\exp(x-\sin x) - 1 )^2}
+  .\] 
+\end{minipage}
+
+\bigskip
+
+\textbf{Zadanie 2} Oszacować błąd następujących wzorów przybliżonych:
+
+\begin{enumerate}
+  \item $\ln(1+x) \approx x - \frac{x^2}{2}, ~ |x| \le \frac{1}{2}$,
+  \item $\sqrt{1+x} \approx 1 + \frac{x}{2} - \frac{x^2}{8}, ~|x| \le
+    \frac{1}{2}$ ,
+  \item $\sin(x) \approx x -  \frac{x^3}{6}, ~|x| \le \frac{1}{2}$.
+\end{enumerate}
+
+Wskazówka: wzór Taylora z resztą Lagrange’a.
+
+\bigskip
+
+\textbf{Zadanie 3} 
+
+(a) Niech $f : \mathbb{R} \to \mathbb{R}$ będzie funkcją $2n + 1$ razy
+różniczkowalną na $\mathbb{R}$.  Dowieść, że dla każdego $x \in
+\mathbb{R}$ istnieje liczba $\theta \in (0, 1)$ taka, że
+
+\begin{multline*}
+  f(x) = f(0) + 
+  \frac{2}{1!} f'\left(\frac{x}{2}\right) \left(\frac{x}{2}\right) +
+  \frac{2}{3!}f^{(3)}\left(\frac{x}{2}\right) \left( \frac{x}{2} \right) ^3
+  + \ldots  \\
+  + \frac{2}{(2n-1)!}f^{(2n-1)}\left( \frac{x}{2} \right) \left(
+  \frac{x}{2} \right)^{2n-1} +
+  \frac{2}{(2n+1)!} f^{(2n+1)}(\theta x) \left( \frac{x}{2}
+  \right)^{2n+1}.
+\end{multline*}
+
+Wskazówka: rozwinąć funkcję $f(x)$ we wzór Taylora z resztą Lagrang'a w
+wokół punktu $x_0 = \frac{x}{2}$, oraz funkcję $f(0)$ też w punkcie $x_0
+= \frac{x}{2}$
+
+\medskip
+
+(b) Udowodnij, że 
+
+\[
+\ln(1+x) > 2 \sum_{k=0}^n \frac{1}{2k+1} \left( \frac{x}{2+x}
+\right)^{(2k+1)}
+.\] 
+
+\bigskip
+
+\textbf{Zadanie 4} Niech $f: \mathbb{R} \to \mathbb{R}$ będzie funkcją
+dwukrotnie różniczkowalną, ${f(0) = 0, f'(0) = 1, f''(0) < 0}$. Dla  $a
+\in \mathbb{R}$ definiujemy ciąg: $x_1 = a,~x_{n+1} = f(x_n)$ dla $n\ge
+1$. Udowodnić, że istnieje $\delta > 0$, dla której, jeżeli $0 < a <
+\delta$ to ciąg $(x_n)$ jest zbieżny do 0.
+
+\bigskip
+
+\textbf{Zadanie 5} Udowodnić, że jeżeli funkcja $f$ jest dwukrotnie
+różniczkowalna w punkcie $x_0$ to
+
+\[
+f''(x_0) = \lim_{h\to 0} \frac{f(x_0 + h) + f(x_0 - h) - 2f(x_0)}{h^2}
+.\] 
+
+\bigskip
+
+\textbf{Zadanie 6} Zbadać wypukłość i znaleźć punkty przegięcia funkcji
+$f(x) = x^2 \ln x$ dla $x > 0$.
+
+\end{document}
+

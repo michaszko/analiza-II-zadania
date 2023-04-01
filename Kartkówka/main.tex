@@ -1,0 +1,88 @@
+%! TeX program = lualatex
+%! TEX options = -synctex=1 -interaction=nonstopmode -file-line-error --shell-escape "%DOC%"
+\documentclass[a4paper,11pt]{article}
+\usepackage{polski}
+% \usepackage{libertine}
+\usepackage[top=1.5cm, bottom=1.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\everymath{\displaystyle}
+
+\setlength\parindent{0.5pt} 
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\begin{center}
+  {\large\textbf{Kartkówka}}\\
+  {\small 27 marca 2023}
+\end{center}
+
+\hrulefill
+
+\bigskip
+
+\textbf{Zadanie 1} Oblicz następującą granicę:
+
+\[
+\lim_{x \to 0} \frac{e^{3x} + \ln(1-2x) - \sin x - \cos x}{-1 +\cos 5x}
+.\]
+
+\bigskip
+
+\textbf{Zadanie 2} Ile wyrazów szeregu 
+
+\[
+e^x = 1 + \frac{x}{1!} + \frac{x^2}{2!} + ... 
+\]
+
+trzeba wziąć, żeby policzyć liczbe $e$ z dokładnością do 
+3 miejsca po przecinku.\\
+
+\textit{Dla chcących sobie utrudnić to zadanie:} załóż, że nie wiesz o 
+funkcji $e^x$ nic oprócz 1) $e^0 = 1$; 2) $(e^x)' = e^x$; 
+3) $ \forall_x~~e^x > 0$.
+
+\bigskip
+
+\textbf{Zadanie 3} Oblicz przedział i promień zbieżności 
+szeregów potęgowych
+
+\[
+\sum_{n=0}^\infty \frac{n^{2n+1}}{4^{3n}}(2x+17)^n
+\quad\quad\quad
+\sum_{n=0}^\infty (2 + (-1)^{n})^{3n+2} x^{2n+1}
+\]
+
+\bigskip
+
+\textbf{Zadanie 4} Znajdź sumę następującego szeregu:
+
+$$\sum_{n=1}^\infty \frac{n}{2^{2n-1}} x^{n-1}$$
+
+\bigskip
+
+\textbf{Zadanie 5} Znaleźć postać ogólną funkcji $f$ tożsamościowo
+spełniającej równanie
+
+$$(x^2 + 1) f'' - 4x f' + 6f = 0$$
+
+zakładając, że $f$ jest sumą pewnego szeregu potęgowego o środku w 
+$x_0 = 0$.
+
+\bigskip
+
+\textbf{Zadanie 6} Oblicz całkę nieoznaczoną
+
+$$\int \frac{1}{e^x + 1} dx$$
+
+% \hrulefill
+
+\end{document}
+

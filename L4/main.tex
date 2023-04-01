@@ -1,0 +1,147 @@
+%! TeX program = lualatex
+%! TEX options = -synctex=1 -interaction=nonstopmode -file-line-error --shell-escape "%DOC%"
+\documentclass[a4paper,11pt]{article}
+\usepackage{polski}
+% \usepackage{libertine}
+\usepackage[top=1.5cm, bottom=1.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\everymath{\displaystyle}
+
+\setlength\parindent{0.5pt} 
+
+\begin{document}
+
+\begin{center}
+  {\large\textbf{Lista 4}}
+\end{center}
+
+\hrulefill
+\begin{center}
+    \textbf{Zadania do deklaracji (poniedziałek)}
+\end{center}
+
+\bigskip
+
+\textbf{Zadanie 1} Oblicz następujące całki nieoznaczone:
+
+\begin{multicols}{3}
+    \begin{enumerate}
+        \item $\int \sin x e^x dx$
+        \item $\int \frac{x^4}{1+x^2} dx$
+        \item $\int x^3 \ln x dx$
+    \end{enumerate}
+\end{multicols}
+
+\bigskip
+
+\textbf{Zadanie 2} Oblicz następujące całki oznaczone:
+
+\begin{multicols}{3}
+    \begin{enumerate}
+        \item $\int \limits_0^1 x^3 \sqrt{7+x^4} dx$
+        \item $\int \limits_0^1 \frac{e^t}{e^{2t} + e^t + 1} dt$
+        \item $\int \limits_0^1 \frac{s}{1+s^4} ds$
+    \end{enumerate}
+\end{multicols}
+
+\bigskip
+
+\textbf{Zadanie 3} Oblicz $\smallint_0^\infty x^n e^{-x}$ dla
+każdego $n \in \mathbb{N}_0$.
+
+\textit{Wskazówka: sprawdź w internecie "Funkcja gamma Eulera"}
+
+\bigskip
+
+\textbf{Zadanie 4} Niech $f: [0,1] \to (0,\infty)$ będzie funkcją 
+ciągłą. Udowodnić że 
+
+$$\int \limits_0^1 \frac{f(x)}{f(x) + f(1-x)} dx = \frac{1}{2}$$
+
+a następnie obliczyć
+
+$$\int \limits_0^{\frac{\pi}{2}} \frac{\sqrt{\sin x}}{\sqrt{\sin x} + \sqrt{\cos x}} dx.$$
+
+\bigskip
+
+\hrulefill
+
+\begin{center}
+    \textbf{Zadania na zajęcia}
+\end{center}
+
+\bigskip
+
+\textbf{Zadanie 5} Stosując wzór na całkowanie przez części 
+obliczyć całki nieoznaczone:
+
+\begin{multicols}{4}
+    \begin{enumerate}
+        \item $\int x \cdot \arctan x dx$,
+        \item $\int (\sin x)^4 dx$,
+        \item $\int e^{3x} \sin (4x) dx$
+        \item $\int x e^x \sin x dx$
+    \end{enumerate}
+\end{multicols}
+
+\bigskip
+
+\textbf{Zadanie 6} Obliczyć całki nieoznaczone z funkcji wymiernych:
+
+\begin{multicols}{3}
+    \begin{enumerate}
+        \item $\int \frac{x^4 + x^3 + x^2 + 4x -1}{x^3 - x} dx$,
+        \item $\int \frac{2x+5}{(x^2 + 4x + 5)^2} dx$,
+        \item $\int \frac{8}{x^4+4} dx$
+    \end{enumerate}
+\end{multicols}
+
+\bigskip
+
+\textbf{Zadanie 7} . Stosując wzór na całkowanie przez podstawienie obliczyć całki nieoznaczone:
+
+\begin{multicols}{4}
+    \begin{enumerate}
+        \item $\int \frac{x^2}{\sqrt{1+x^3}} dx$,
+        \item $\int \frac{dx}{e^{3x}+1}$,
+        \item $\int \sqrt{\frac{x+1}{x-1}} dx$
+        \item $\int (\sin x)^5$
+    \end{enumerate}
+\end{multicols}
+
+\bigskip
+
+\textbf{Zadanie 8} Obliczyć całki nieoznaczone wykorzystując podstawienie trygonometryczne (lub inaczej):
+
+\begin{multicols}{3}
+    \begin{enumerate}
+        \item $\int \frac{dx}{\sin x}$,
+        \item $\int \frac{dx}{5+3\cos x}$,
+        \item $\int \frac{1+\sin x \cos x}{(2+\cos^2 x)(1+\sin^2 x)} dx$
+    \end{enumerate}
+\end{multicols}
+
+\textbf{Zadanie 9} Obliczyć całki nieoznaczone z funkcji zawierających pierwiastek z trójmianu kwadratowego:
+
+\begin{multicols}{3}
+    \begin{enumerate}
+        \item $\int \sqrt{3-2x-x^2} dx$
+        \item $\int \frac{x^2}{\sqrt{x^2-4x + 3}} dx$
+        \item $\int \frac{\sqrt{x^2 + 4x + 9}}{x^2} dx$
+    \end{enumerate}
+\end{multicols}
+
+\textbf{Zadanie 10} Pokaż w jednej linijce 
+
+$$\int \limits_{-L}^L \sin nx \cos mx dx = 0$$
+
+dla $L>0$ i $n,m \in \mathbb{Z}$.
+
+\end{document}
+
