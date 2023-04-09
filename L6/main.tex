@@ -1,0 +1,64 @@
+%! TeX program = lualatex
+%! TEX options = -synctex=1 -interaction=nonstopmode -file-line-error --shell-escape "%DOC%"
+\documentclass[a4paper,11pt]{article}
+\usepackage{polski}
+% \usepackage{libertine}
+\usepackage[top=1.5cm, bottom=1.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{fontspec}
+
+\newfontfamily\DejaSans{DejaVu Sans}
+
+\everymath{\displaystyle}
+
+\setlength\parindent{0.5pt} 
+
+\begin{document}
+
+\begin{center}
+  {\large\textbf{Lista 6}}
+\end{center}
+
+\hrulefill
+\begin{center}
+    \textbf{Zadania do deklaracji (poniedziałek)}
+\end{center}
+
+\bigskip
+
+\textbf{Zadanie 1} Dla $f:[a,b] \to \mathbb{R}$ określamy:
+
+\begin{itemize}
+    \item \textit{długość wykresu} $f$, o ile $f$ jest klasy $C^1$, wzorem 
+    $$\int_a^b \sqrt{1+(f'(x))^2} ~dx;$$
+    \item \textit{pole powierzchni obrotowej} powstałej przez obrót wykresu $f$ 
+    (zawartego w płaszczyźnie $XY$) wokół osi $X$ w przestrzeni $XYZ$, 
+    o ile $f$ jest klasy $C^1$, wzorem
+    $$2\pi \int_a^b f(x) \sqrt{1+(f'(x))^2}~dx;$$
+    \item \textit{objętość bryły obrotowej ograniczonej powyższą powierzchnią 
+    obrotową i płaszczyznami "$x=a$" oraz "$x=b$", o ile $f$ jest ciągła, wzorem}
+    $$\pi \int_a^b (f(x))^2 ~dx.$$
+\end{itemize}
+
+W oparciu o powyższe wzory oblicz:
+\begin{enumerate}
+    \item  długość okręgu o promieniu $r$,
+    \item objętość kuli o promieniu $r$,
+    \item pole powierzchni sfery o promieniu $r$,
+    \item  objętość walca obrotowego o promieniu podstawy $r$ i wysokości $h$,
+    \item pole powierzchni bocznej walca obrotowego o promieniu podstawy $r$ i wysokości $h$,
+    \item objętość stożka obrotowego o promieniu podstawy $r$ i wysokości $h$,
+    \item pole powierzchni bocznej stożka obrotowego o promieniu podstawy $r$ i wysokości $h$.
+\end{enumerate}
+
+\textit{Proszę zrobić 4 wybrane przez was zadania z wymienionych powyżej.} 
+
+\bigskip
+
+\end{document}
+
