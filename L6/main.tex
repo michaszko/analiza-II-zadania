@@ -1,0 +1,148 @@
+%! TeX program = lualatex
+%! TEX options = -synctex=1 -interaction=nonstopmode -file-line-error --shell-escape "%DOC%"
+\documentclass[a4paper,11pt]{article}
+\usepackage{polski}
+% \usepackage{libertine}
+\usepackage[top=1.5cm, bottom=1.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{fontspec}
+
+\newfontfamily\DejaSans{DejaVu Sans}
+
+\everymath{\displaystyle}
+
+\setlength\parindent{0.5pt} 
+
+\begin{document}
+
+\begin{center}
+  {\large\textbf{Lista 6}}
+\end{center}
+
+\hrulefill
+\begin{center}
+    \textbf{Zadania do deklaracji (poniedziałek)}
+\end{center}
+
+\bigskip
+
+\textbf{Zadanie 1} Dla $f:[a,b] \to \mathbb{R}$ określamy:
+
+\begin{itemize}
+    \item \textit{długość wykresu} $f$, o ile $f$ jest klasy $C^1$, wzorem 
+    $$\int_a^b \sqrt{1+(f'(x))^2} ~dx;$$
+    \item \textit{pole powierzchni obrotowej} powstałej przez obrót wykresu $f$ 
+    (zawartego w płaszczyźnie $XY$) wokół osi $X$ w przestrzeni $XYZ$, 
+    o ile $f$ jest klasy $C^1$, wzorem
+    $$2\pi \int_a^b f(x) \sqrt{1+(f'(x))^2}~dx;$$
+    \item \textit{objętość bryły obrotowej ograniczonej powyższą powierzchnią 
+    obrotową i płaszczyznami "$x=a$" oraz "$x=b$", o ile $f$ jest ciągła, wzorem}
+    $$\pi \int_a^b (f(x))^2 ~dx.$$
+\end{itemize}
+
+W oparciu o powyższe wzory oblicz:
+\begin{enumerate}
+    \item  długość okręgu o promieniu $r$,
+    \item objętość kuli o promieniu $r$,
+    \item pole powierzchni sfery o promieniu $r$,
+    \item  objętość walca obrotowego o promieniu podstawy $r$ i wysokości $h$,
+    \item pole powierzchni bocznej walca obrotowego o promieniu podstawy $r$ i wysokości $h$,
+    \item objętość stożka obrotowego o promieniu podstawy $r$ i wysokości $h$,
+    \item pole powierzchni bocznej stożka obrotowego o promieniu podstawy $r$ i wysokości $h$.
+\end{enumerate}
+
+\textit{Proszę zrobić 4 wybrane przez was zadania z wymienionych powyżej.} 
+
+\bigskip
+
+\hrulefill
+
+\textbf{Zadanie 2 (Róg Gabriela)} Oblicz pole powierzchni oraz objętość
+bryły obrotowej ograniczonej przez powierzchnię powstałą w wyniku obrtu
+wokół osi $OX$ wykresu funkcji $f(x) = \frac{1}{x}$ określonej na
+przedziale $[1,\infty]$. Widzisz pewien paradoks?
+
+\bigskip
+
+\textbf{Zadanie 3} Obliczyć pole figury ograniczonej krzywymi:
+\begin{itemize}
+    \item  $y = x^2 - 6x + 10 \quad , \quad y = 6x - x^2$
+    \item $y = \frac{1}{1+x^2} \text{~(czarownica Agnesi)} \quad , \quad 
+        y = \frac{x^2}{2}$
+    \item $y=e^x, y=e^{-x}, x =1$
+    \item $^\ast$ o parametryzacji  $x = a(t-\sin t), ~ y = a(1-\cos t)$
+        oraz osią $OX$.
+\end{itemize}
+
+\bigskip
+
+\textbf{Zadanie 3.1} Oblicz długość podanych krzywych:
+
+\begin{itemize}
+    \item $x^{\frac{2}{3}} + y^{\frac{2}{3}} = a^{\frac{2}{3}}$ 
+    \item $y = 2 \sqrt{x}$ dla $x$ od 0 do 1
+    \item  $x = \frac{c^2}{a} \cos^3 t,~ y = \frac{c^2}{b} \sin^3 t,~ (c^2
+        = a^2 - b^2)$
+\end{itemize}
+
+\bigskip
+
+\textbf{Zadanie 4} Obliczyć objętość i pole powierzchni torusa powstałego
+przez obrót koła $K$ 
+
+\[
+K: x^2 + (y-R)^2 \le r^2 \quad (R>r>0)
+\]
+dookoła osi $OX$.
+
+\bigskip
+
+\textbf{Zadanie 4.1} Obliczyć objętości brył powstałych przez obórt
+poniższych krzywych wokół osi $OX$:
+
+ \begin{itemize}
+    \item $y = \sin x$ dla $0\le x \le \pi$
+    \item $y = ax - x^2$ dla $x$ takich, że $y(x) >0$
+    \item $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ (elipsoida obrotowa)
+\end{itemize}
+
+\bigskip
+
+\textbf{Zadanie 5}$^\ast$ Udowodnić, że jeżeli funkcja $f : [0,\infty) →
+\mathbb{R}$ jest ciągła, malejąca i dodatnia to
+
+\[
+\lim_{t\to 0^+} t \sum_{n=1}^\infty f(tn) = \int_{0}^\infty f(x) dx
+.\] 
+
+Następnie korzystając z tej równości wyznacz granice:
+
+\[
+\lim_{t\to 0^+} \sum_{n=1}^\infty \frac{t}{1+(nt)^2} 
+\quad , \quad
+\lim_{t\to 0^+} t \sum_{n=1}^\infty ne^{-tn^2}
+.\] 
+
+\bigskip
+
+\textbf{Zadanie 6} Wykaż, że funkcja $\chi: [-1,1] \to \mathbb{R}$ zadana
+wzorem
+
+ \[
+\chi(x) = 
+\begin{cases}
+    0 & \text{dla~} -1 \le x \le 0 \\
+    1 & \text{dla~} 0 < x \le  1
+\end{cases}
+\] 
+jest całkowalna w sensie Riemanna (choć nie jest ciągła...).
+
+\bigskip
+
+\end{document}
+
