@@ -1,0 +1,93 @@
+%! TeX program = lualatex
+%! TEX options = -synctex=1 -interaction=nonstopmode -file-line-error --shell-escape "%DOC%"
+\documentclass[a4paper,11pt]{article}
+\usepackage{polski}
+% \usepackage{libertine}
+\usepackage[top=1.5cm, bottom=1.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{fontspec}
+
+\newfontfamily\DejaSans{DejaVu Sans}
+
+\everymath{\displaystyle}
+
+\setlength\parindent{0.5pt} 
+
+\begin{document}
+
+\begin{center}
+  {\large\textbf{Lista 6.1}}
+\end{center}
+
+\textbf{Zadanie 1}  Niech $P$ będzie puntem na paraboli $y=x^2$ innym niż
+punkt  $(0,0)$. Normalna do paraboli w punkcie  $P$ przecina tę parabolę
+w innym punkcie $Q$. Znajdź punkt $P$, tak że długość paraboli pomiędzy
+punktem $P$ i $Q$ jest minimalna.
+
+\bigskip
+
+\textbf{Zadanie 1.1} To samo co wyżej tylko znajdź punkt $P$, który
+minimalizuje obwód figury ograniczonej parabolą oraz normalną.
+
+\bigskip
+
+\textbf{Zadanie 2} Obracamy figurę ograniczoną krzywymi $y=x^2$ oraz
+$y=x$ wzdłuż prostej o równaniu  $y=x$. Jaka jest objętość takiej figury?
+Jaka jest jest powierzchnia boczna?
+
+\bigskip 
+\textbf{Zadanie 3} Tadek, jako prawdziwy matematyk, chce wysłać swojej
+ukochanej walentynkę w kształcie serca o równaniu parametrycznym $x(t) =
+\cos t (1-\sin t),~ y(t) = \sin t (1-\sin t)$. Chce je włożyć do
+prostokątnego pudełka. Jakie muszą być minimalne wymiary tego pudełka,
+żeby walentynka zmieściła się cała do pudełka? (Jest tu kilka opcji
+pakowania, wybierz najprostszą dla siebie.)
+
+\bigskip
+
+\textbf{Zadanie 3.1$^\ast$} To samo co wyżej, tylko walentynka ma równanie
+$(x^2 + y^2 - 1)^3 = x^2 y^3$.
+
+\bigskip
+
+\textbf{Zadanie 4$^\ast$} Znajdź pole figury ograniczoną krzywą Lissajous o
+parametryzacji $x(t)  = \sin(2t), ~y(t) = \sin(3t)$.
+
+\bigskip
+
+\hrulefill
+
+\bigskip
+
+\textbf{Zadanie 5} Znajdź pole powierzchni pomiędzy 
+\begin{itemize}
+    \item krzywą $y=x(x-1)(x-2)$ a osią  $OX$;
+    \item hiperbolą $xy = m^2$, liniami  $x=a$, $x=3a$ $a>0$ oraz osią
+        $OX$;
+    \item krzywą  $y^2 = 2px$ oraz  $x^2 = 2py$
+\end{itemize}
+
+\bigskip
+
+\textbf{Zadanie 6} Znajdź długość zwisającego luźno kabla pomiędzy
+punktami $A(0,a)$ a  $B(b,h)$ o równaniu  $y=a\cosh \frac{x}{a}$.
+
+\bigskip
+
+\textbf{Zadanie 7} Policz długość krzywej o równaniu $y^2 = x^3$ od
+początku osi współrzędnych do  $x=4$.
+
+\bigskip
+
+ \textbf{Zadanie 8} Policz objętość bryły obrotowej powstałej w wyniku
+ obrotu krzywej $y = \sin^2 x$ wokół osi $OX$ na przedziale  $x=0$ do
+ $x=\pi$. Następnie opakowujemy tą bryłę ciasno sferą. Jaki jest stosunek
+ objętości tej kuli do objętości bryły "sinusowej"?
+
+\end{document}
+
