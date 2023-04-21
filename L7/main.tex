@@ -1,0 +1,131 @@
+%! TeX program = lualatex
+%! TEX options = -synctex=1 -interaction=nonstopmode -file-line-error --shell-escape "%DOC%"
+\documentclass[a4paper,11pt]{article}
+\usepackage{polski}
+% \usepackage{libertine}
+\usepackage[top=1.5cm, bottom=1.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{fontspec}
+
+\newfontfamily\DejaSans{DejaVu Sans}
+
+\everymath{\displaystyle}
+\newcommand{\dm}[1]{\displaystyle{#1}}
+
+\setlength\parindent{0.5pt} 
+
+\begin{document}
+
+\begin{center}
+  {\large\textbf{Lista 7}}
+\end{center}
+
+\hrulefill
+\begin{center}
+    \textbf{Zadania do deklaracji (poniedziałek)}
+\end{center}
+
+\bigskip
+
+\textbf{Zadanie 1 (za dwa punkty)} Zbadać zbieżność (i ew. znaleźć
+granicę) ciągu o wyrazach $(\sqrt[n]{7^n-3^n}, (1-\tfrac{1}{n})^{n^2} $)
+w przestrzeniach metrycznych:
+
+\begin{itemize}
+    \item $\mathbb{R}^2$ z metryką euklidesową,
+    \item $\mathbb{R}^2$ z metryką miejską,
+    \item $\mathbb{R}^2$ z metryką kolejową z węzłem  $w = (0,0)$
+\end{itemize}
+
+\bigskip
+
+\textbf{Zadanie 2} Zbadaj ciągłość funkcji $f: \mathbb{R}^2 \to \mathbb{R}$
+
+\[
+f(x,y) = 
+\begin{cases}
+    \frac{x^2y}{x^2 y^2 + x^2 + y^2} & \text{gdy ~} (x,y) \neq (0,0)\\
+    0 & \text{gdy~} (x,y) = (0,0)
+\end{cases}
+.\] 
+
+
+\bigskip
+
+\textbf{Zadanie 3} Znajdź przykład pokazujący, że 
+\begin{itemize}
+    \item  suma dowolnej rodziny zbiorów domkniętych nie musi być zbiorem
+        domkniętym;
+    \item przecięcie dowolnej rodziny zbiorów otwartych nie musi być
+        zbiorem otwartym.
+\end{itemize} 
+
+\bigskip
+
+\hrulefill
+
+\bigskip
+
+\textbf{Zadanie 4} Wykaż, że w przestrzeni metrycznej każdy ciąg zbieżny
+jest ograniczony.
+
+\bigskip
+
+\textbf{Zadanie 5} 
+\begin{itemize}
+    \item Wykaż, że metryka kolejowa z węzłem w punkcie $w$ spełnia
+        warunki metryki. Naszkicuj kulę o środku $a$ i promieniu 1 w
+        przypadku gdy a) $a = w$ ; b) $a \neq w$.
+    \item Wykaż, że metryka dyskretna spełnia warunki metryki. Opisz $K(a,
+        r)$ w przestrzeni metrycznej z tą metryką w zależności od $r$.
+        Wykaż, że każdy podzbiór jest w tej przestrzeni metrycznej
+        otwarty i domknięty zarazem
+\end{itemize}
+
+\bigskip
+
+\textbf{Zadanie 6} Połóżmy, dla $x\in \mathbb{R}^n$, 
+
+\[
+    \|x\|_p=\biggl(\sum_{i=1}^n|x_i|^p\biggr)^{1/p}\quad\mbox{dla
+    $1\le p<\infty$}; \qquad \|x\|_\infty= \max_{1\le i\le n}
+    |x_i|\, .
+\]
+
+    Dla danego $n\in \mathbb{N}$ znaleźć konkretne stałe dodatnie $A,B,C,D$
+    takie, że dla każdego $x \in \mathbb{R}^n$ $$ A \|x\|_1 \leq \|x\|_2
+    \leq B \|x\|_1 \qquad \text{oraz} \qquad C \|x\|_\infty \leq
+    \|x\|_2 \leq D \|x\|_\infty. $$
+
+\bigskip
+
+\textbf{Zadanie 7} Dla każdego z poniższych podzbiorów $\mathbb{R}^2$ lub
+$\mathbb{R}^3$ proszę rozstrzygnąć, czy jest otwarty, domknięty,
+ograniczony, zwarty:
+
+\begin{enumerate}
+    \item $\{ (x,y) \in \mathbb{R}^2: |x| - |y| < 1 \}$
+    \item $\{ (x,y) \in \mathbb{R}^2: xy = 1 \}$;
+    \item $\{ (x,y,z) \in \mathbb{R}^3: x,y,z \geq 0, x+2y+3x = 6 \}$;
+    \item $\{ (x,y,z) \in \mathbb{R}^3: x^2 + y^2 < z, x^2 + y^2 + z^2
+        \leq 1 \}$;
+    \item $\{ (x,y)\in \mathbb{R}^2: e^{x+y^2} =
+        \ln(\frac{1}{1+x^2+y^2})\}$.  
+\end{enumerate}
+
+\bigskip
+
+\textbf{Zadanie 8} Zbadać istnienie granicy w punkcie
+$\dm{\lim_{(x,y)\to(0,0)} f(x,y) }$ oraz granic iterowanych $\dm{ \lim_{x
+\to 0}\left( \lim_{y \to 0} f(x,y) \right) }$ i $\dm{ \lim_{y \to
+0}\left( \lim_{x \to 0} f(x,y) \right) }$ dla funkcji $$ \text{(a) }
+f(x,y) = (x+y)\cdot \sin\frac{1}{x} \cdot \sin\frac{1}{y}, \qquad \qquad
+\text{(b) } f(x,y) = \dfrac{x^2y^2}{x^2y^2 +(x-y)^2} $$
+
+\end{document}
+
