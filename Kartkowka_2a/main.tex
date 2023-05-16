@@ -1,0 +1,89 @@
+%! TeX program = lualatex
+%! TEX options = -synctex=1 -interaction=nonstopmode -file-line-error --shell-escape "%DOC%"
+\documentclass[a4paper,11pt]{article}
+\usepackage{polski}
+% \usepackage{libertine}
+\usepackage[top=1.5cm, bottom=1.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{fontspec}
+\usepackage{bm}
+
+\newfontfamily\DejaSans{DejaVu Sans}
+
+\everymath{\displaystyle}
+\newcommand{\dm}[1]{\displaystyle{#1}}
+\newcommand{\RR}{\mathbb{R}}
+
+\setlength\parindent{0.5pt} 
+
+\begin{document}
+
+\begin{center}
+  {\large\textbf{Kartkówka 2}}
+\end{center}
+
+\hrulefill
+
+\bigskip
+
+\textbf{Zadanie 1} Policz poniższe całki nieoznaczone:
+
+\[
+\int \frac{x^2+1}{x-1} dx 
+\quad \quad 
+\int \frac{1}{1-e^{-x}} dx
+\quad \quad
+\int \frac{x}{e^x}  dx
+.\] 
+
+\bigskip
+
+\textbf{Zadanie 2} Policz pole powierzchni figury ograniczonej przez
+krzywe $y^2=2px$ i  $x^2 = 2py$. Wskazówka: narysować!
+
+\bigskip
+
+\textbf{Zadanie 3} Znajdź długość krzywej danej wzorem $y(x) =
+\frac{1}{4} x^2 - \frac{1}{2} \ln x$ pomiędzy $x = 1$ oraz $x=e$.
+
+\bigskip
+
+\textbf{Zadanie 4} Znajdź poniższe granice lub pokaż, że nie istnieją:
+
+\[
+\lim_{(x,y)\to (0,0)} \frac{x + 2xy + y}{x^2 + y^2}
+\quad \quad
+\lim_{(x,y) \to (0,0)} \frac{5x^2y^2}{x^2 + y^2}
+.\] 
+
+\hrulefill
+
+\begin{center}
+    \textbf{Zadania dodatkowe}
+\end{center}
+
+\textbf{Zadanie 1} Policz pola powierzchni \textbf{obu} części na które
+jest podzielone koło o równaniu {$x^2 + y^2 \le 8$} przez parabolę  $y^2 =
+2x$. Wskazówka: narysować.
+
+\bigskip
+
+\textbf{Zadanie 2} Rozważmy funkcję $f(x) = x^n$ na przedziale  $[0,1]$.
+Niech  $x_0 \in (0,1)$. Określmy  przez  $A(x_0)$ pole powierzchni
+ogranioczonej przez proste $y=0$ i  $x=x_0$ oraz krzywą $f(x)$, a przez
+$B(x_0)$  pole powierzchni ograniczonej przez $x=x_0$ i $y=1$ oraz krzywą
+ $f(x)$. Dla jakiego  $x_0$ zachodzi  $A(x_0) = B(x_0)$?
+
+ \bigskip
+
+ \textbf{Zadanie 3} Policz objętość figury powstałej na skutek obrotu
+ wzdłóż prostej $x=a$ części paraboli  $y^2=4ax$, odciętej przez prostą
+  $x=a$.
+
+\end{document}
+
