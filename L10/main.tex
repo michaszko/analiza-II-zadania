@@ -18,6 +18,7 @@
 \everymath{\displaystyle}
 \newcommand{\dm}[1]{\displaystyle{#1}}
 \newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
 
 \setlength\parindent{0.5pt} 
 
@@ -93,13 +94,16 @@ $f(x,y) =(x+y)^2$ na okręgu $x^2+y^2 = 1$.
 na zbiorze $M$, zbadaj czy są one osiągane.
 
 \begin{enumerate}
-  \item $f(x,y) = x^2 + y^2 \quad M=\{(x,y) \in \mathbb{R}^2 : 2x + 3y = 7\}$ 
-  \item $f(x,y) = \sqrt{(x-2)^2 + y^2} \quad M=\{(x,y) \in \mathbb{R}^2 :
+  \item $f(x,y) = x^2 + y^2 \qquad M=\{(x,y) \in \mathbb{R}^2 : 2x + 3y = 7\}$ 
+  \item $f(x,y) = \sqrt{(x-2)^2 + y^2} \qquad M=\{(x,y) \in \mathbb{R}^2 :
     x^2 + y^2= 1\}$ 
-  \item $f(x,y,z) = xyz \quad M=\{(x,y,z) \in \mathbb{R}^3 : x^2 + y^2 +
+  \item $f(x,y,z) = xyz \qquad M=\{(x,y,z) \in \mathbb{R}^3 : x^2 + y^2 +
       z^2= x+y+z = 1\}$ 
-  \item $f(x,y) = Ax + By + C \quad M=\{(x,y) \in \mathbb{R}^2 : x^2 +
+  \item $f(x,y) = Ax + By + C \qquad M=\{(x,y) \in \mathbb{R}^2 : x^2 +
     y^2 = 1\}$ 
+  \item 
+    $f(x,y)=\displaystyle\frac{x \ln(1+y) }{2x^2+y^2}, \qquad A=
+    \{(x,y): 0<x\le y\le 1\}$.
 \end{enumerate}
 
 \bigskip
@@ -108,6 +112,33 @@ na zbiorze $M$, zbadaj czy są one osiągane.
 równaniu $3x − 2z = 0$, dla którego suma kwadratów odległości od punktów
 $(1, 1, 1)$ i $(2, 3, 4)$ jest najmniejsza?  Jeśli tak, to znajdź
 wszystkie takie punkty.
+
+\bigskip
+
+\textbf{Zadanie 12} Załóżmy, że funkcja $f: \RR^2 \to \RR^2$ jest
+różniczkowalna i $f(x,y) = (u(x,y), v(x,y))$, gdzie
+$u,v: \RR^2 \to \RR$. Funkcję $f$ traktujemy jako odwzorowanie $f:
+\CC \to \CC$, tzn. dla $z = x + iy$ (gdzie $i^2 = -1$)
+$$ f(x) = u(z) + i v(z). $$
+Udowodnić, że pochodna zespolona 
+$$ f'(z) = \lim_{w \to 0} \frac{f(z+w) - f(z)}{w}, \qquad
+(\text{gdzie } w \in \CC) $$
+istnieje wtedy i tylko wtedy, gdy
+$$ \frac{\partial u}{\partial x}(z) =
+\frac{\partial v}{\partial y} (z) \quad \text{i}
+\quad
+\frac{\partial u}{\partial y}(z) =
+-\frac{\partial v}{\partial x} (z).  $$
+Wykazać, że funkcja $g: \CC \to
+\CC$,  $g(z) = \overline z$, nie ma
+pochodnej zespolonej.
+
+\bigskip
+
+\textbf{Zadanie 13} Niech $f:\RR^d \to \RR$ będzie funkcją
+\textit{jednorodną stopnia $1$}, tzn. taką, że dla dowolnego $t\in \RR$ i
+$x\in \RR^d$ zachodzi $f(t x)=t f(x)$. Wykazać, że $f$ jest
+różniczkowalna w $0$ wtedy i tylko wtedy, gdy $f$ jest funkcją liniową. 
 
 \end{document}
 
