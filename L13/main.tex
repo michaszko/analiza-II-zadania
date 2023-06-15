@@ -1,0 +1,185 @@
+%! TeX program = lualatex
+%! TEX options = -synctex=1 -interaction=nonstopmode -file-line-error --shell-escape "%DOC%"
+\documentclass[a4paper,11pt]{article}
+\usepackage{polski}
+% \usepackage{libertine}
+\usepackage[top=1.5cm, bottom=1.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{fontspec}
+\usepackage{bm}
+
+\newfontfamily\DejaSans{DejaVu Sans}
+
+\everymath{\displaystyle}
+\newcommand{\dm}[1]{\displaystyle{#1}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+
+\setlength\parindent{0.5pt} 
+
+\begin{document}
+
+\begin{center}
+  {\large\textbf{Lista 13}}
+\end{center}
+
+\hrulefill
+
+\textbf{Zadanie 1} Zbadaj ciągłość funkcji $f: \mathbb{R}^2 \to
+\mathbb{R}$
+
+\[
+  f(x,y) = 
+  \begin{cases}
+    \frac{x^2y}{x^2 y^2 + x^2 + y^2} & \text{gdy ~} (x,y) \neq
+    (0,0)\\
+    0 & \text{gdy~} (x,y) = (0,0)
+  \end{cases}
+.\] 
+
+\textbf{Zadanie 2} Oblicz $\frac{\partial f}{\partial \bm{v}}(\bm{a})$
+dla $f(x,y,z) = y z^2$, $\bm{a} = (3,1,-1)$ oraz  $\bm{v} = (-1,2,0)$.
+
+\textbf{Zadanie 3} Wykazać, że funkcja $f: \mathbb{R}^2 \to \mathbb{R}$
+
+\[
+  f(x,y) =
+  \begin{cases}
+    \frac{xy^2}{x^2 + y^2}, & \text{gdy~} (x,y) \neq (0,0) \\
+    0, & \text{gdy~} (x,y) = (0,0)
+  \end{cases}
+\] 
+
+jest ciągła. Wyznaczyć jej pochodne cząstkowe funkcji $f$ w każdym
+punkcie $(x, y) \in \mathbb{R}^2$ i pochodne kierunkowe w punkcie $(0,
+0)$. Zbadać różniczkowalność funkcji $f$ w każdym punkcie jej dziedziny.
+
+\textbf{Zadanie 4} Zbadać istnienie pochodnych cząstkowych w $(0,0)$ i
+różniczkowalność w $(0,0)$ funkcji 
+
+$$
+\text{(a)}
+\quad
+f(x,y)
+=
+\begin{cases}
+  \dfrac{2x y}{\sqrt{x^2 + y^2}} & \text{gdy } (x,y) \neq
+  (0,0) \\ 
+0 & \text{gdy } (x,y) = (0,0) \end{cases} 
+$$
+
+$$\text{(b)} \quad 
+f(x,y) = 
+\begin{cases} 
+  x y \sin(\frac{1}{x y})& \text{gdy } x \neq 0
+  \text{ i } y\neq 0 \\ 
+  0 & \text{gdy } x=0 \text{ lub } y=0 
+\end{cases} 
+$$
+
+\textbf{Zadanie 5} Funkcja $f: \RR^2 \to \RR$ jest różniczkowalna i dla
+dowolnych $x,y \in \RR$ 
+$$ y \cdot \frac{\partial f}{\partial x}(x,y) = x
+\cdot \frac{\partial f}{\partial y}(x,y). $$ 
+Wykazać, że funkcja $f$ jest stała na każdym okręgu o równaniu $x^2 +y^2
+= r^2$.
+
+\textbf{Zadanie 6} Niech $f(x,y)=x^3y-3x^2y+y^2$ dla $x,y \in \mathbb R$.
+Proszę:
+\begin{itemize}
+  \item wyznaczyć wszystkie punkty krytyczne funkcji $f$,
+  \item dla każdego z tych punktów rozpoznać, czy $f$ ma w nim
+    lokalne
+    ekstremum. 
+\end{itemize}
+
+\textbf{Zadanie 7} Znajdź kresy funkcji $f$ zadanych poniższymi wzorami
+na zbiorze $M$, zbadaj czy są one osiągane.
+
+\begin{enumerate}
+  \item $f(x,y) = x^2 + y^2 \qquad M=\{(x,y) \in \mathbb{R}^2 : 2x + 3y
+    = 7\}$ 
+  \item $f(x,y) = \sqrt{(x-2)^2 + y^2} \qquad M=\{(x,y) \in
+      \mathbb{R}^2 :
+    x^2 + y^2= 1\}$ 
+  \item $f(x,y,z) = xyz \qquad M=\{(x,y,z) \in
+      \mathbb{R}^3 : x^2 + y^2 +
+    z^2= x+y+z = 1\}$ 
+  \item $f(x,y) = Ax + By + C \qquad
+    M=\{(x,y) \in \mathbb{R}^2 : x^2 +
+    y^2 = 1\}$ 
+  \item 
+    $f(x,y)=\displaystyle\frac{x
+    \ln(1+y) }{2x^2+y^2},
+    \qquad A=
+    \{(x,y): 0<x\le y\le
+    1\}$.
+\end{enumerate}
+
+\textbf{Zadanie 8} Czy istnieje punkt z płaszczyzny w $\mathbb{R}^3$ o
+równaniu $3x − 2z = 0$, dla którego suma kwadratów odległości od punktów
+$(1, 1, 1)$ i $(2, 3, 4)$ jest najmniejsza?  Jeśli tak, to znajdź
+wszystkie takie punkty.
+
+\textbf{Zadanie 9} Wyznaczyć następujące granice 
+
+\begin{itemize}
+  \item $\lim_{n \to \infty} \int_{W} \sqrt[n]{x_1x_2}~ d\lambda_2(x),
+    \quad \text{gdzie} \quad W = \{x \in \RR^3: \|x\|\le 1, 0\le
+    x_1<x_2\} $
+  \item $\lim_{n \to \infty} \int_{A} \left(
+    1+\frac{x+y}{n} \right)^n ~
+    d\lambda_2(x), \quad \text{gdzie} \quad A =
+    \{(x,y) : x>0, x+y>0\} $
+  \item $\lim_{n \to \infty} \int_{0}^\infty
+    \frac{x^n +2}{x^n + 1}
+    e^{-x} dx$
+  \item $\lim_{n\to \infty}
+    \int_{\RR^2} \frac{x^n + y^n}{1+x^n
+    + y^n}
+    e^{-x-y} d\lambda_2(x,y)$
+  \item $\lim_{n\to \infty}
+    \int_1^\infty
+    \frac{\ln(1+nx)}{1+x^2\ln
+    n} dx$
+\end{itemize}
+
+\textbf{Zadanie 10} Obliczyć następujące całki:
+
+\begin{itemize}
+  \item $\int_K x_1 x_2 d \lambda_3(x), \quad \text{gdzie} \quad K =
+    \{x
+    \in \RR^3: x_1,x_2,x_3 > 0,  \|x\| < 1\} $
+  \item $\int_{R} x_1 d \lambda_2(x), \quad$ gdzie $R$ jest
+    równoległobokiem w $\RR^2$ o wierzchołkach $(0,0),
+    (2,1), (1,1),
+    (3,2)$
+  \item $\int_{[0,1]\times [0,2]} e^{x_1 + x_2}
+    dx$ 
+  \item $\int_{[-1,1]\times [0,1]} (x_1 +
+    x_2)^{2222} dx$ 
+  \item $\int_{T} d\lambda_2(x,y),\quad$
+    gdzie $T$ to trójkąt pełny na
+    płaszczyźnie $\RR^2$ o
+    wierzchołkach
+    $(0,0),(a,0),(c,h)$, gdzie
+    $a,h,c>0$.
+  \item  $\int_A
+    d\lambda_2(x,y), \quad$
+    gdzie  $A=\{(x_1,x_2) \in
+      \RR^2:
+      x_1 \ge 0, x_1^2
+      \le x_2 \le
+    \sqrt{x_1} \} $
+\end{itemize}
+
+\textbf{Zadanie 11} Oblicz pole powierzchni elipsy o równaniu
+$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$.
+
+\end{document}
+
